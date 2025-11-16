@@ -1,4 +1,4 @@
-public class WypisanieWszytskichKombinacjiBEZPowtorzen {
+public class Schemat_brutalny_bez_powtorzen {
     public static void main(String[] args)
     {
         final int N = 4; // DLUGOSC ZBIORU

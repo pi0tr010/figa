@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-public class WypisanieWszytskichKombinacjiZPowtorzeniami {
+public class Schemat_brutalny_zpowtorzeniami {
 
     
     public static List<int[]> generateWithRepetitions(int[] maxCount) {
