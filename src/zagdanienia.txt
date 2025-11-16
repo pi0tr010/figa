@@ -1,0 +1,7 @@
+                                brutalna sila       |   generowanie i testowanie | dziel i zywciezaj => programowanie dynamiczne | algorytmy zachlanne | Metody globalne-> monte carlo |
+reszta                      |
+plecak                      |
+silnia                      |
+dwumian newtona             |
+fibo                        |
+problem liczb pitagorejskich|
