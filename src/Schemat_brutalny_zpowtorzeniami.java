@@ -4,7 +4,7 @@ public class Schemat_brutalny_zpowtorzeniami {
 
     
     public static List<int[]> generateWithRepetitions(int[] maxCount) {
-        List<int[]> combinations = new ArrayList<>();
+        List<int[]> combinations = new ArrayList<>(); // tablica na kombinacje
         int n = maxCount.length;
         int[] current = new int[n];
 
@@ -32,7 +32,11 @@ public class Schemat_brutalny_zpowtorzeniami {
         // 1. Kombinacje Z powtórzeniami
         int[] maxCount = new int[n];
         for (int i = 0; i < n; i++) {
-            maxCount[i] = V[i] > 0 ? MAX_V / V[i] : 0;
+            if (V[i] > 0) {
+                maxCount[i] = MAX_V / V[i];
+            } else {
+                maxCount[i] = 0;
+            }
         }
 
         List<int[]> withRep = generateWithRepetitions(maxCount);

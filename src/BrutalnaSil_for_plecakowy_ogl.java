@@ -6,12 +6,18 @@ public class BrutalnaSil_for_plecakowy_ogl {
         int NajlepszaWartosc = 0;
         int[] NajlepszyZestaw = {0,0,0,0,0,0};
 
-        for (int i0 = 0; i0 <= 3; i0++) {
-            for (int i1 = 0; i1 <= 11; i1++) {
-                for (int i2 = 0; i2 <= 7; i2++) {
-                    for (int i3 = 0; i3 <= 11; i3++) {
-                        for (int i4 = 0; i4 <= 7; i4++) {
-                            for (int i5 = 0; i5 <= 23; i5++) {
+        // Oblicz maksymalne ilości dla każdego przedmiotu
+        int[] maxIlosc = new int[vi.length];
+        for (int i = 0; i < vi.length; i++) {
+            maxIlosc[i] = v / vi[i];
+        }
+        // petli tyle co elementow
+        for (int i0 = 0; i0 <= maxIlosc[0]; i0++) {
+            for (int i1 = 0; i1 <= maxIlosc[1]; i1++) {
+                for (int i2 = 0; i2 <= maxIlosc[2]; i2++) {
+                    for (int i3 = 0; i3 <= maxIlosc[3]; i3++) {
+                        for (int i4 = 0; i4 <= maxIlosc[4]; i4++) {
+                            for (int i5 = 0; i5 <= maxIlosc[5]; i5++) {
                                 int[] CoBiore = {i0,i1,i2,i3,i4,i5};
                                 int wartosc = 0;
                                 int objetosc = 0;
