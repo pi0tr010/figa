@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BrutalnaSila_for_plecakowy {
     public static void main(String[] args) {
         int v = 10;
@@ -33,11 +35,7 @@ public class BrutalnaSila_for_plecakowy {
                 }
             }
         }
-        for (int i = 0; i < NajlepszyZestaw.length; i++) {
-            if (NajlepszyZestaw[i] == 1) {
-                System.out.println(i);
-            }
-        }
-        System.out.println("Wartosc: " + NajlepszaWartosc);
+
+        System.out.println("Wartosc: " + NajlepszaWartosc+ "  wynik:" +Arrays.toString(NajlepszyZestaw));
     }
 }

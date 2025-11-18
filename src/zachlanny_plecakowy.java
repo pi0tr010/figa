@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-// ZLE
+//pół-dobrze
 public class zachlanny_plecakowy {
     static int[] V= {6, 2, 3, 2, 3, 1};
     static int[] W = {6, 4, 5, 7, 10, 2};
@@ -8,12 +8,15 @@ public class zachlanny_plecakowy {
     static int pojemnosc = 10;
 
     public static int znajdz_najlepszy(){
-        int najcennieszy =0;
+        double naj_ratio =0;
         int index_najlepszego=0;
         for(int i=0;i<=dlugosc-1;i++){
-            if(W[i]>najcennieszy){
-                najcennieszy=W[i];
-                index_najlepszego = i;
+            if( V[i] > 0) {
+                double ratio = (double) W[i] / V[i]; // Use double to avoid integer division
+                if(ratio > naj_ratio) {
+                    naj_ratio = ratio;
+                    index_najlepszego = i;
+                }
             }
         }
         return index_najlepszego;
